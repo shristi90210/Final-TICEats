@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TICEats</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <header class="main-header">
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo">TIC</div>
+        <div class="icons">
+            <span class="icon">
+                <Link to="/add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Your Order</Link>
+            </span>
+            <span class="icon"><i class="fa-regular fa-user"></i></span>
+        </div>
+    </header>
+    <!-- NAV BAR -->
+
+    <!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="main.css">  
+    <title>Non-Veg Menu</title>  
+</head>  
+<body>  
+    <div class="non-veg-menu-section">  
+        <h2>YOUR MENU</h2>  
+        <div class="menu-list" id="menu-list"></div>  
+    </div>  
+    <script>  
+        const nonVegMenuData = [  
+        {
+      image: 'https://i.pinimg.com/474x/79/af/12/79af1218e8c3ce3cd6b0926affb40be6.jpg',
+      title: 'Chicken Burger',
+      price: 'Rs 230',
+    },
+    {
+      image: 'https://i.pinimg.com/474x/de/fe/2b/defe2b40b1a4ac2692aa097c607eaf3b.jpg',
+      title: 'C.Mo:mo',
+      price: 'Rs 190',
+    },
+    {
+      image: 'https://i.pinimg.com/474x/f3/33/59/f33359fccbad0dd5eec6e97752d39540.jpg',
+      title: 'Chicken Tikka Bread',
+      price: 'Rs 230',
+    },
+    {
+      image: 'https://i.pinimg.com/474x/78/98/7a/78987a0b41417c32141269dff0d541a4.jpg',
+      title: 'Spaghetti',
+      price: 'Rs 310',
+    },
+    {
+      image: 'https://i.pinimg.com/474x/30/23/32/302332f6db6fbdf9765f69b493dcbb11.jpg',
+      title: 'Fried Rice',
+      price: 'Rs 210',
+    },
+    {
+      image: 'https://i.pinimg.com/474x/9b/bf/b6/9bbfb63a1429fa0a9c0891593eb5fe10.jpg',
+      title: 'Chowmein',
+      price: 'Rs 160',
+    },
+    {
+      image: 'https://i.pinimg.com/474x/d3/29/f0/d329f0d5ea0fd5e5a9554beddaa257f2.jpg',
+      title: 'Chicken Sandwich',
+      price: 'Rs 110',
+      
+    },
+        ];  
+
+        
+
+        function displayMenuItems() {  
+            const menuList = document.getElementById('menu-list');  
+            nonVegMenuData.forEach(item => {  
+                const menuCard = `  
+                    <div class="menu-card">  
+                        <img src="${item.image}" alt="${item.title}" class="menu-image">  
+                        <h3 class="dish-title">${item.title}</h3>  
+                        <p class="price">Price | ${item.price}</p>  
+                        <button class="order-now-btn">Add To Cart Now</button>  
+                    </div>  
+                `;  
+                menuList.insertAdjacentHTML('beforeend', menuCard);  
+            });  
+        }  
+
+        // Call the function to display items  
+        displayMenuItems();  
+    </script>  
+</body>  
+</html>
+</body>
+</html>

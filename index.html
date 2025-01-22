@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>TICEats</title>
+
+</head>
+
+<body>
+    <!-- ------------NAV BAR----------- -->
+    <header class="main-header">
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo">TIC</div>
+        <div class="icons">
+            <span class="icon">
+                <Link to="/add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Your Order</Link>
+            </span>
+            <span class="icon"><i class="fa-regular fa-user"></i></span>
+        </div>
+    </header>
+    <!-- ------------NAV BAR----------- -->
+
+    <!-- ------------HOME PAGE------------ -->
+
+    <div class="homepage">
+
+        <div class="intro-section">
+          <div class="circle">
+            <div class="circle-cont">
+              <h1>TIC Eats</h1>
+              <p>Your one-stop solution for delicious meals at Thames International College!<br/> With TIC Eats, ordering food is easier and faster than ever!  </p>
+  
+              <button class="menu-button"><Link to="/menu">CHECKOUT MENU <i class="fa-solid fa-arrow-right"></i></Link></button>
+            </div>
+  
+          </div>
+          <div class="img-gallery">
+            <img src='gallery/gallery.jpeg' alt="gallery" />
+          </div>
+        </div>
+  
+        <div class="specials-section">
+          <div class="carousel">
+            <TodaysSpecial/>
+          </div>
+        </div>
+      </div>
+    <!-- ------------HOME PAGE------------ -->
+
+     <!-- FOOTER SECTION -->
+     <div class="footer-section">
+      <div class="footer-content">
+
+          <div class="left-content">
+              <ul>
+                  <li>
+                      <h3>WE'RE TIC EATS</h3>
+                  </li>
+                  <li>
+                      <Link to='/about'>About Us </Link>
+                  </li>
+                  <li>
+                      <Link to='/menu'>Checkout Our Menu </Link>
+                  </li>
+              </ul>
+          </div>
+          <div class="mid-content">
+              <ul>
+                  <li>
+                      <h3>CALL US</h3>
+                  </li>
+                  <li> 📞 01-5971224</li>
+                  <li>Old Baneshwor, Kathmandu 44600 </li>
+
+              </ul>
+          </div>
+      </div>
+      <br />
+      <p>© 2024 Thames International College Pvt. Ltd.. All Rights Reserved. Developed By: Ekbana</p>
+
+  </div>
+  <!-- FOOTER SECTION -->
+</body>
+
+</html>
